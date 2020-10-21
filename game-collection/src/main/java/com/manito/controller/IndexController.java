@@ -1,17 +1,18 @@
 package com.manito.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
 
-@RestController
+@Controller
 public class IndexController {
 
 
-    @GetMapping("/index")
+    @RequestMapping("/")
     public String index(){
-
-        //return "javascript-tetris/index";
-        return "index1";
+//        ModelAndView index = new ModelAndView("index1");
+        return "javascript-tetris/index";
     }
+
 
 }
